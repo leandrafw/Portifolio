@@ -1,0 +1,45 @@
+.container--info {
+  min-height: 80vh;
+  background-image: url(https://i.imgur.com/oxjqM1A.png);
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-box {
+  width: 300px;
+  position: relative;
+  background-color: #FFFF;
+  text-align: center;
+  border: 1px solid transparent;
+  padding: 50px;
+  transition: 0.6s;
+}
+
+.header-box:hover {
+    border: 1px solid #a624e2;
+    color: #a624e2;
+}
+
+  .header-box::before {
+    border-bottom: 3px solid #a624e2;
+    border-left: 3px solid #a624e2;
+    -webkit-transform-origin: 100% 0%;
+}
+
+  .header-box::after {
+    border-top: 3px solid #a624e2;
+    border-right: 3px solid #a624e2;
+    -webkit-transform-origin: 0% 100%;
+}
+
+.header__title {
+    color: #0A1612;
+}
+
+.header__subtitle {
+    color: #1A2920;
+}
